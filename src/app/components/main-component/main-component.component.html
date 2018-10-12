@@ -1,0 +1,23 @@
+<div id="main-div" class="container">
+
+  <div class="row row-center">
+      <div *ngFor="let band of bandsForService; let i = index" [attr.data-index]="i"  class="card" style="width: 18rem; height: 500px;">
+        <a class="card-click" [routerLink]="['/band',band.id]" routerLinkActive="active">
+        <h5 class="card-title card-title-center">{{band.name | uppercase}}</h5>
+
+        <img class="card-img-mini" src="{{band.miniPhoto}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{band.quik_bio}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-dark" style="text-align:center;">{{band.origin}}</li>
+          <li class="list-group-item list-group-item-dark" style="text-align:center;">{{band.year}}</li>
+        </ul>
+      </a>
+        <div class="card-body">
+        <button type="button" class="btn btn-outline-light btn-card" [routerLink]="['/albums',band.id]" routerLinkActive="active">Albums</button>
+        <button type="button" class="btn btn-outline-light btn-card">Videos</button>
+        </div>
+      </div>
+  </div>
+</div>
