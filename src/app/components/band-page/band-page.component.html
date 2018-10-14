@@ -1,10 +1,18 @@
 <div id='band-page-main-container'>
-<div class="mb-3 card-page-band">
-  <img class="card-img-top" [src]="band.photo" [alt]="band.name">
-  <div class="card-body">
-    <h5 class="card-title band-name">{{band.name | uppercase}}</h5><h6 class="card-title band-year">    {{band.year}}   </h6><h6 class="card-title band-origin"> {{band.origin}}</h6>
-    <p class="card-text">{{band.bio}}</p>
+  <div class="mb-3 card-page-band">
+    <div class="hovereffect">
+      <img class="card-img-top" [src]="band.photo" [alt]="band.name">
+      <div class="overlay">
+        <h2>{{band.name | uppercase}}</h2>
+        <h6 class="card-title band-origin"> {{band.origin}}</h6>
+        <h6 class="card-title band-year"> {{band.year}} </h6>
+        <p>{{band.bio}}</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title band-name">{{band.name | uppercase}}</h5>
+    </div>
+
   </div>
-</div>
 
 </div>

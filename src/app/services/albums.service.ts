@@ -13,7 +13,7 @@ export class AlbumsService {
       id: "master",
       name: "Master of Puppets",
       style: "Thrash Metal",
-      cover:"",
+      cover:"assets/img/metallica/cover_master.jpg",
       bandId: "metallica",
       year: 1986,
       songs:[]

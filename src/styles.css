@@ -272,3 +272,19 @@ a.card-click:hover {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
+/*Albums list */
+.album-img-mini{
+  max-width:10%;
+  /*Este funciona bien*/
+  max-height: 20%;
+  /*max-height: 40%;*/
+  object-fit: contain;
+  display: inline;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 20px;
+  border-width: 20px;
+  border-color: black;
+}
